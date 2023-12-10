@@ -1,3 +1,5 @@
+import { TABS } from "../tabs";
+import SidebarButton from "./SidebarButton";
 
 
 
@@ -9,6 +11,10 @@ export default function Sidebar ({}: SidebarProps) {
 			<header className="px-3 py-5 bg-zinc-800 text-center">
 				<h4>PC Info</h4>
 			</header>
+
+			<section className="space-y-0.5">
+				{TABS.map((tab, k) => <SidebarButton key={k} tab={tab} />)}
+			</section>
 		</aside>
 	);
 }
