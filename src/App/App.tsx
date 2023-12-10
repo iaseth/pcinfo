@@ -8,7 +8,7 @@ import Main from './Main/Main';
 export default function App () {
 
 	return (
-		<div className="">
+		<div className="bg-zinc-900 text-white">
 			<Header />
 			<Main />
 			<Footer />
